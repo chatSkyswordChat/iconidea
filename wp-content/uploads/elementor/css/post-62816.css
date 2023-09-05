@@ -1,0 +1,77 @@
+.elementor-62816 .elementor-element.elementor-element-d1f96ee{margin-top:64px;margin-bottom:0px;}.elementor-62816 .elementor-element.elementor-element-4e014f5 > .elementor-element-populated{padding:0px 0px 0px 0px;}@media(max-width:1024px){.elementor-62816 .elementor-element.elementor-element-d1f96ee{margin-top:32px;margin-bottom:0px;}}/* Start custom CSS for section, class: .elementor-element-d1f96ee */.container-fluid{
+    max-width: 991px
+}
+.side-breadcrumb {
+    max-width: 991px;
+    margin-inline: auto;
+}
+
+.gform_title{
+    font-size: clamp(30px, 2.5vw, 50px) !important;
+    margin-bottom: 32px
+}
+.gsection_title{
+    font-size: clamp(30px, 2.5vw, 50px) !important;
+   margin-top: 32px;
+   margin-bottom: 16px
+}
+.gform_wrapper.gravity-theme .gsection{
+    padding: 0;
+    margin-bottom: 16px
+}
+.gform_wrapper.gravity-theme .gfield_label{
+    font-size:  clamp(20px, 2.5vw, 24px) !important;
+    color: #2c2c2c;
+}
+.gform_wrapper.gravity-theme .gfield_required{
+    color: #ed1c23 !important;
+    font-size: clamp(16px, 2.5vw, 20px) !important
+}
+.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large{
+    font-size:  clamp(20px, 2.5vw, 24px) !important;
+    border-color: #bfbfbf;
+}
+.gform_wrapper.gravity-theme .gfield input.large:hover, .gform_wrapper.gravity-theme .gfield select.large:hover{
+    border-color: #1f9beb;
+}
+.gform_wrapper.gravity-theme .gfield select.large{
+    padding-block: 0;
+}
+
+.gform_wrapper.gravity-theme .ginput_container_date input{
+    width: 100% !important;
+    font-size:  clamp(20px, 2.5vw, 24px) !important;
+}
+.gform_wrapper.gravity-theme .ginput_container_date input:hover{
+    border-color: #1f9beb;
+}
+.gravity-theme.ui-datepicker .ui-datepicker-header select{
+    font-size:  clamp(20px, 2.5vw, 24px) !important;
+    padding-left: 8px !important;
+    min-width: 100px;
+    text-align: right
+}
+.gravity-theme.ui-datepicker .ui-datepicker-calendar th span{
+    font-size:  clamp(20px, 2.5vw, 24px) !important;
+}
+.gravity-theme.ui-datepicker .ui-datepicker-calendar .ui-state-disabled .ui-state-default{
+      font-size:  clamp(20px, 2.5vw, 24px) !important;  
+}
+
+.gravity-theme.ui-datepicker .ui-datepicker-calendar .ui-state-default {
+    font-size:  clamp(20px, 2.5vw, 24px) !important;  
+}
+.gform_wrapper.gravity-theme .gform_fileupload_rules{
+    font-size:  clamp(16px, 2.5vw, 20px) !important;  
+}
+.gform_button.button{
+    background: #ed1c23;
+    color: #ffffff;
+    border-color: #ed1c23;
+    font-size:  clamp(20px, 2.5vw, 24px) !important;
+    width: 100%;
+    border-radius: 4px
+}
+.gform_wrapper.gravity-theme .gfield textarea.medium:hover{
+    border-color: #1f9beb; 
+}/* End custom CSS */

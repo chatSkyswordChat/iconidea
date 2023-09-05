@@ -1,0 +1,44 @@
+/*----------------------------*/
+/* Single Product SC
+/*----------------------------*/
+@import 'apr-core-rtl';
+@import 'widget/single-product';
+
+.elementor-widget-apr-single-product .elementor-single-product.single-style-1 .slick-arrow {
+    transform: rotateY(180deg);
+}
+
+@media (min-width: 1025px) {
+    .single-product-home-cake .elementor-single-product.single-style-2 .slick-arrow {
+        transform: rotate(180deg) translateX(-50%) !important;
+    }
+    .elementor-single-product.single-style-2 {
+        .slick-arrow {
+            transform: translateX(50%);
+        }
+
+        .btn-next i:before {
+            content: "\e92a";
+        }
+
+        .btn-prev i:before {
+            content: "\e91d";
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .elementor-widget-apr-single-product .elementor-single-product {
+        &.single-style-1 {
+            .slick-arrow {
+                &.btn-prev {
+                    transform: translateX(56%);
+                }
+
+                &.btn-next {
+                    transform: translateX(56%);
+                }
+            }
+        }
+    }
+}

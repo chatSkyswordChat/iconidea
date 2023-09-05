@@ -1,0 +1,44 @@
+<wpml-config>
+    <admin-texts>
+        <key name="lusion_settings">
+            <key name="blog-title" />
+            <key name="under-contr-content" />
+            <key name="product-reviewtab-name" />
+            <key name="product-destab-name" />
+            <key name="product-infotab-name" />
+            <key name="product-tagtab-name" />
+            <key name="404-title" />
+            <key name="404-content" />            
+            <key name="under-contr-day" />
+            <key name="under-contr-hour" />
+            <key name="under-contr-min" />
+            <key name="under-contr-sec" />
+            <key name="coming_subcribe_text" />
+            <key name="social-header-twitter" />
+            <key name="social-header-instagram" />
+            <key name="social-header-facebook" />
+            <key name="social-header-google" />
+            <key name="social-header-pinterest" />
+            <key name="link_url_facebook" />
+            <key name="social-twitter" />
+            <key name="social-facebook" />
+            <key name="social-google" />
+            <key name="social-instagram" />
+            <key name="social-pinterest" />
+            <key name="social-instagram" />
+            <key name="footer-copyright" />
+        </key>
+    </admin-texts>
+    <custom-fields>
+        <custom-field action="translate" style="visual">custom_tab_content</custom-field>
+        <custom-field action="translate" style="line">custom_tab_title</custom-field>
+        <custom-field action="translate">link_code</custom-field>
+        <custom-field action="translate">link_title</custom-field>
+        <custom-field action="translate">quote_code</custom-field>
+        <custom-field action="translate">quote_author</custom-field>
+        <custom-field action="translate">video_code</custom-field>
+        <custom-field action="translate">tes_name</custom-field>
+        <custom-field action="translate">address</custom-field>
+        <custom-field action="translate">occupation</custom-field>
+    </custom-fields>
+</wpml-config>

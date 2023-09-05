@@ -1,0 +1,147 @@
+
+
+
+
+
+/* Contact 2 */
+
+.contact-2 .elementor-icon-box-title {
+    font-family: inherit;
+}
+
+.contact-2 .elementor-icon-box-title a:hover {
+    color: $primary_color !important;
+}
+
+.heading-custom .heading-modern .heading-title span {
+    display: inline-block;
+    color: $primary_color;
+    text-decoration: underline;
+}
+
+.contact-2 .elementor-icon-box-wrapper:last-child {
+    border-bottom: none !important;
+}
+
+.border-before {
+    .elementor-container.elementor-column-gap-default {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: -43px;
+            bottom: -27px;
+            right: 15px;
+            left: 15px;
+            border: 1px solid #ebeeee;
+        }
+    }
+}
+
+
+.image-contact-4 {
+    .elementor-image img {
+        object-position: #{$right};
+    }
+}
+
+
+.cs-image-box {
+    .elementor-image-box-img {
+        position: relative;
+
+        &:before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #ebeeee;
+            opacity: 0;
+            @include transform(translate3d(0, 0, 0));
+            @include transition(all 0.5s ease-in-out);
+        }
+    }
+
+    .elementor-image-box-content {
+        padding: 0 15px;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        @include transition(all 0.6s ease-in-out);
+
+        .elementor-image-box-title {
+            margin-bottom: 0;
+            line-height: 18px;
+
+            a {
+                position: relative;
+                font-size: 16px;
+                color: $highlight_color;
+                padding-top: 76px;
+                display: inline-block;
+                line-height: 18px;
+
+                &:hover {
+                    color: $primary_color;
+                }
+
+                &:before {
+                    content: "\e967";
+                    font-family: lusion !important;
+                    font-size: 50px;
+                    position: absolute;
+                    top: 0;
+                    line-height: 100%;
+                    left: 50%;
+                    margin-left: -25px;
+                }
+            }
+
+        }
+    }
+    .elementor-image-box-wrapper {
+        .elementor-image-box-img {
+            width: 100%;
+
+            a {
+                display: inline-block;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &:hover {
+            .elementor-image-box-content {
+                position: absolute;
+                top: 50%;
+                opacity: 1;
+                text-align: center;
+                transform: translateY(-50%);
+
+            }
+
+            .elementor-image-box-img {
+                &:before {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .contact-2.elementor-widget-icon-box .elementor-icon-box-icon {
+        padding-top: 10px;
+        float: $left
+    }
+    .contact-2.elementor-widget-icon-box .elementor-icon-box-content {
+        overflow: hidden;
+    }
+}

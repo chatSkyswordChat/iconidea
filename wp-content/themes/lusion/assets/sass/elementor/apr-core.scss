@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+$rtl: 0; 
+$dir: ltr !default;
+$text_color: #707070;
+$heading_color : #2c2c2c;
+$primary_color : #2c2c2c;
+$highlight_color : #2c2c2c;
+$widget_color : #9a9a9a;
+$border_color : #ebeeee;
+// transition
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  transition:         $transition;
+}
+
+// flexbox
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-direction-column() {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@mixin justify-content($justify-content) {
+  -webkit-justify-content: $justify-content;
+  justify-content: $justify-content;
+}
+
+// @mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transitions($transitions){
+    -webkit-transition: $transitions;
+    -moz-transition: $transitions;
+    -ms-transition: $transitions;
+    -o-transition: $transitions;
+    transition: $transitions;
+}
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+@mixin animation($animation) {
+     -moz-animation: $animation;
+       -o-animation: $animation;
+      -ms-animation: $animation;
+  -webkit-animation: $animation;
+          animation: $animation;
+}
+@import "directional";

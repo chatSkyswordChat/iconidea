@@ -1,0 +1,23 @@
+.tc-child-themes-wrapper {
+	position: relative;
+
+	.theme-browser {
+		.theme {
+			&:hover {
+				.arrowpress-screenshot {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.arrowpress-screenshot {
+		cursor: default;
+	}
+
+	.theme-name {
+		cursor: default;
+	}
+}

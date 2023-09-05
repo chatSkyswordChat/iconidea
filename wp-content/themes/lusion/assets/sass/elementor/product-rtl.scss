@@ -1,0 +1,17 @@
+/*----------------------------*/
+/* Product SC
+/*----------------------------*/
+@import 'apr-core-rtl';
+@import 'variables';
+@import 'widget/product';
+
+.product-top:hover .has-second-image a.img-last {
+    right: 0;
+}
+
+@media (min-width: 768px){
+    .product-style-default .product-grid .product-top .product-action .action-item .add-cart-btn a:before,
+    .product-style-6 .product-grid .product-top .product-action .action-item .add-cart-btn a::before {
+        transform: rotate( 180deg ) translate(50%, 50%);
+    }
+}

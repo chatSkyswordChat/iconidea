@@ -1,0 +1,444 @@
+body .coming-soon-container {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.page-template-coming-soon.logged-in {
+    margin-top: -32px
+}
+
+.content-coming-soon#content {
+    width: 100%;
+    position: relative
+}
+
+.page-coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.page-coming-soon .coming-soon {
+    min-height: 396px;
+    z-index: 3
+}
+
+.page-coming-soon .coming-soon h1 {
+    color: #2c2c2c;
+    font-size: 60px;
+    line-height: 83px;
+    text-transform: capitalize;
+    margin-bottom: 13px
+}
+
+.page-coming-soon .coming-soon .cm-info {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 845px;
+    margin: auto;
+    padding-bottom: 44px
+}
+
+.page-coming-soon .coming-soon .cm-countdown.apr-countdown {
+    padding-bottom: 30px;
+    margin: auto
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields {
+    height: 60px;
+    display: flex
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields h3 {
+    font-size: 0
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields .form-submit:hover input[type="submit"] {
+    background-color: #2c2c2c !important
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email] {
+    color: #2c2c2c;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-right: 30px;
+    text-align: left
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email]::placeholder {
+    color: #bcbcbc !important;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email]:-ms-input-placeholder {
+    color: #bcbcbc !important;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email], .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=submit] {
+    height: 60px;
+    transform: none
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email]:invalid, .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=submit]:invalid {
+    outline: none
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email] {
+    width: 88.6%
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=submit] {
+    width: 11.4%;
+    padding: 0;
+    min-width: 170px;
+    color: #2c2c2c;
+    background-color: #fff;
+    position: relative;
+    margin-top: 0;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 0.1em
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields p:first-child {
+    overflow: hidden;
+    width: 370px;
+    float: left
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child {
+    display: table;
+    border: none;
+    z-index: 1;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child i {
+    position: absolute;
+    top: 50%;
+    -moz-transform: translate(35%, -75%);
+    -o-transform: translate(35%, -75%);
+    -ms-transform: translate(35%, -75%);
+    -webkit-transform: translate(35%, -75%);
+    transform: translate(35%, -75%);
+    left: 50%;
+    z-index: 10;
+    font-size: 16px
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child:hover:after {
+    content: none
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child:hover input[type=submit] {
+    background-color: #2c2c2c
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-response {
+    text-align: left;
+    position: relative;
+    margin: auto;
+    clear: both
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+    margin-bottom: -65px
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert p a {
+    color: #707070
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert p a:hover {
+    color: #2c2c2c
+}
+
+.page-coming-soon .coming-subcribe .mc4wp-alert.mc4wp-error, .page-coming-soon .coming-subcribe .woocommerce-error {
+    padding: 11px 10px 11px 10px;
+    color: #fff;
+    border: 0
+}
+
+.page-coming-soon .elementor-social-icon i:hover {
+    color: #dd3032
+}
+
+input[type=email]:invalid, input[type=submit]:invalid {
+    outline: none
+}
+
+@media (max-width: 1400px) {
+    .page-coming-soon .coming-soon .cm_logo {
+        margin-bottom: 60px
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+        margin-bottom: -15px
+    }
+}
+
+@media (min-width: 1025px) {
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email] {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-coming-soon .coming-soon h1 {
+        font-size: 65px;
+        letter-spacing: 4px;
+        line-height: 55px;
+        margin-bottom: 20px
+    }
+
+    .content-coming-soon.admin-bar .page-coming-soon .coming-soon {
+        padding-top: 85px
+    }
+}
+
+@media (max-width: 591px) {
+    .page-coming-soon .coming-soon h1 {
+        font-size: 35px;
+        letter-spacing: 2px;
+        margin-bottom: 5px
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-response {
+        width: 100%
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields p:first-child {
+        width: 291px;
+        margin-bottom: 0
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child i {
+        -moz-transform: translate(-50%, -75%);
+        -o-transform: translate(-50%, -75%);
+        -ms-transform: translate(-50%, -75%);
+        -webkit-transform: translate(-50%, -75%);
+        transform: translate(-50%, -75%)
+    }
+}
+
+@media (max-width: 478px) {
+    .page-coming-soon .elementor-widget:not(:last-child) {
+        margin-bottom: 10px
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields .form-letter {
+        position: relative
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields p:first-child {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child {
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    .page-coming-soon .coming-soon h1 {
+        font-size: 30px !important;
+        line-height: 35px
+    }
+
+    .page-coming-soon .coming-soon .cm-info, .page-coming-soon .coming-soon .title_form_mc, .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email], .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert p {
+        font-size: 14px;
+        line-height: 20px
+    }
+
+    .page-coming-soon .coming-subcribe {
+        margin-bottom: 0
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+        margin-bottom: 0
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields {
+        display: block;
+        height: auto
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email] {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email], .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=submit] {
+        height: 45px;
+        line-height: 45px
+    }
+
+    .content-coming-soon.admin-bar .coming-soon {
+        padding-top: 50px !important
+    }
+
+    .content-coming-soon.admin-bar .page-coming-soon .coming-soon .cm_logo {
+        margin-bottom: 24px
+    }
+}
+
+@media (max-height: 1024px) and (max-width: 1024px) {
+    .content-coming-soon.admin-bar .coming-soon {
+        padding-top: 40px
+    }
+
+    .page-coming-soon .coming-soon h1 {
+        margin-bottom: 15px
+    }
+
+    .page-coming-soon .coming-subcribe {
+        margin-bottom: 0
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+        margin-bottom: 0
+    }
+
+    .content-coming-soon.admin-bar .page-coming-soon .coming-soon .cm_logo {
+        margin-bottom: 24px
+    }
+}
+
+@media (max-height: 685px) {
+    .page-coming-soon .coming-soon h1 {
+        font-size: 40px;
+        line-height: normal
+    }
+
+    .page-coming-soon .elementor-widget:not(:last-child) {
+        margin-bottom: 10px
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields .form-letter {
+        position: relative
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields p:first-child {
+        width: 100%;
+        float: none
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields p:last-child {
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    .page-coming-soon .coming-soon .cm-info, .page-coming-soon .coming-soon .title_form_mc, .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=email], .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert p {
+        font-size: 14px;
+        line-height: 20px
+    }
+
+    .page-coming-soon .coming-soon .cm-info {
+        padding-bottom: 30px
+    }
+
+    .page-coming-soon .coming-subcribe {
+        margin-bottom: 0
+    }
+
+    .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+        margin-bottom: 0
+    }
+
+    .content-coming-soon.admin-bar .coming-soon {
+        padding-top: 40px !important
+    }
+
+    .content-coming-soon.admin-bar .page-coming-soon .coming-soon .cm_logo {
+        margin-bottom: 24px
+    }
+}
+
+@media (max-width: 767px) and (max-height: 480px) {
+    .content-coming-soon .coming-soon {
+        padding-top: 30px
+    }
+}
+
+@media (min-width: 1401px) {
+    .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+        margin-bottom: -40px
+    }
+
+    .coming-subcribe {
+        max-width: 970px;
+        margin: 0 auto
+    }
+}
+
+@media (min-width: 1800px) {
+    .content-coming-soon.admin-bar .coming-soon {
+        padding-top: 40px
+    }
+}
+
+@media (max-width: 767px) {
+    .page-coming-soon .coming-subcribe .mc4wp-response .mc4wp-alert {
+        margin-top: 20px
+    }
+
+    .page-template-coming-soon .coming-soon .countdown-number {
+        font-size: 30px !important;
+        padding-top: 13px
+    }
+
+    .page-template-coming-soon .coming-soon .countdown-label {
+        font-size: 14px !important;
+        padding-top: 0
+    }
+}
+
+@media (max-width: 478px) {
+    .page-coming-soon .coming-subcribe .mc4wp-form-fields input[type=submit] {
+        width: 100%
+    }
+
+    .page-template-coming-soon .coming-soon .countdown-number {
+        font-size: 20px !important;
+        padding-top: 7px
+    }
+
+    .page-template-coming-soon .coming-soon .countdown-label {
+        font-size: 14px !important;
+        padding-top: 0
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-footer-instagram.apr-nav-menu__align-justify .apr-nav-menu--layout-horizontal .mega-menu > li {
+        flex-grow: unset
+    }
+}

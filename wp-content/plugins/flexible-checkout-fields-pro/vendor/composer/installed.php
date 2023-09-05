@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'wpdesk/flexible-checkout-fields-pro',
+        'pretty_version' => '3.5.5',
+        'version' => '3.5.5.0',
+        'reference' => '43c645dc8c6eb4213758f60294dbf819f4e9bfbe',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'psr/log' => array(
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'wpdesk/flexible-checkout-fields-pro' => array(
+            'pretty_version' => '3.5.5',
+            'version' => '3.5.5.0',
+            'reference' => '43c645dc8c6eb4213758f60294dbf819f4e9bfbe',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'wpdesk/wp-wpdesk-helper-override' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'reference' => '77844fc71da7ebb7645f10f0fc15f5294fed8542',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../wpdesk/wp-wpdesk-helper-override',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//iconidea.co.th/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://iconidea.co.th/page-sitemap.xml</loc>
+		<lastmod>2023-09-05T04:10:08+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://iconidea.co.th/header-sitemap.xml</loc>
+		<lastmod>2023-08-18T08:07:59+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://iconidea.co.th/footer-sitemap.xml</loc>
+		<lastmod>2023-08-28T04:26:17+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://iconidea.co.th/portfolio-sitemap.xml</loc>
+		<lastmod>2023-08-03T03:29:25+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://iconidea.co.th/product-sitemap.xml</loc>
+		<lastmod>2023-09-04T06:44:27+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://iconidea.co.th/author-sitemap.xml</loc>
+		<lastmod>2023-09-05T11:10:08+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://iconidea.co.th/local-sitemap.xml</loc>
+		<lastmod>2023-09-01T04:23:33+00:00</lastmod>
+	</sitemap>
+</sitemapindex>

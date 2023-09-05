@@ -1,0 +1,32 @@
+$rtl: 1;
+$dir: rtl !default;
+
+@import "../variables";
+@import "../directional";
+@import "blog";
+.icon-sticky::before{
+	border-width: 0 0 60px 60px;
+    border-color: transparent transparent transparent $primary_color;
+}
+.blog-post-info{
+	text-align: right;
+}
+.comment-item .box-info-comment .post-author-box{
+	display: flex;
+}
+.blog.post-single .box-info-comment .comment-reply {
+    padding-left: 0;
+}
+.comment-item .box-info-comment .comment-actions .comment-reply a{
+	padding-right: 15px;
+	padding-left: 0;
+	&.comment-reply-link{
+		display: inline-block;
+	}
+	&:before{
+		left: -9px;
+	}
+}
+.comment-item .box-info-comment .post-author-box .info-author{
+	text-align: right;
+}

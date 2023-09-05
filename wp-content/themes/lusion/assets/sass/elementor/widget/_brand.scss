@@ -1,0 +1,221 @@
+@keyframes slidebrands {
+    0% {
+        opacity: 0;
+        transform: translateY(-6px)
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(-4px)
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(4px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(6px)
+    }
+}
+@-webkit-keyframes slidebrands {
+    0% {
+        opacity: 0;
+        transform: translateY(-6px)
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(-4px)
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(4px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(6px)
+    }
+}
+.arrowSliding {
+    position: absolute;
+    font-size: 16px;
+    line-height: 16px;
+    color: $highlight-color;
+    -webkit-animation: slide 4s linear infinite;
+    animation: slide 4s linear infinite;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.delay2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.main-brands{
+    position: relative;
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        &.slick-prev{
+            #{$left}: 0;
+        }
+        &.slick-next{
+            #{$right}: 0;
+        }
+        &:hover,&:focus{
+            background:$primary_color;
+            border-color:$primary_color;
+            color:#fff;
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        @include transform(translateX(-50%));
+        margin-bottom: 0;
+        li.slick-active, li:hover{
+            button {
+                opacity: 1;
+                background-color: $primary_color;
+            }
+        }
+    }
+    .slick-list {
+        .slick-slide >div{
+            display: flex;
+            + div{
+                .brands-content{
+                    border-top: none;
+                }
+            }
+        }
+        .slick-slide.slick-active:last-child{
+            margin-right: -1px;
+        }
+    }
+    .slick-list{
+        padding-#{$left}: 0 !important;
+    }
+    .brands-content{
+        position: relative;
+        border: 1px solid #2b2b30;
+        border-#{$right}: none;
+        overflow: hidden;
+        .brands-img img{
+            width: 100%;
+            max-width: 100%;
+        }
+        .info-brands{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background-color: $primary_color;
+            color: #fff;
+            top: -100%;
+            left: 0;
+            transition: all 0.6s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            h3{
+                margin-bottom: 0;
+                a{
+                    text-transform: capitalize;
+                    font-size: 24px;
+                    letter-spacing: 0.01em;
+                    color: #fff;
+                }
+            }
+            span{
+                font-size: 16px;
+                letter-spacing: 0.01em;
+            }
+            .arrowAnim{
+                position: relative;
+                width: 9px;
+                margin-top: 15px;
+                .arrowSliding{
+                    color: #fff;
+                    animation: slidebrands 2s linear infinite;
+                    font-size: 9px;
+                    &.delay1 {
+                        -webkit-animation-delay: 1s;
+                        animation-delay: 1s;
+                    }
+
+                    &.delay2 {
+                        -webkit-animation-delay: 2s;
+                        animation-delay: 2s;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .info-brands{
+                top: 0;
+                opacity: 1;
+            }
+        }
+    }
+    .is-slick-active{
+        .brands-content:before{
+            //content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            #{$right}: 0;
+            top: 0;
+            background-color: #2b2b30;
+            z-index: 1;
+        }
+    }
+    .slick-list{
+        &:before{
+            content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            #{$left}: 0;
+            top: 0;
+            background-color: #2b2b30;
+            z-index: 1;
+        }
+        &:after{
+            content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            #{$right}: 0;
+            top: 0;
+            background-color: #2b2b30;
+            z-index: 1;
+        }
+    }
+}
+@media (max-width: 767px) {
+
+    .main-brands .slick-list{
+        padding-#{$left}: 0 !important;
+        &:before,
+        &:after{
+            display: none;
+        }
+    }
+    .main-brands .brands-content .info-brands{
+        display: none;
+    }
+}

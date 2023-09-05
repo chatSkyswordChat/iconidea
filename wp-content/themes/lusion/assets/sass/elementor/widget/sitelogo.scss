@@ -1,0 +1,31 @@
+.elementor-widget-apr_site_logo {
+    img {
+        display: block;
+    }
+}
+.elementor-widget-apr_site_logo {
+    margin-bottom: 0 !important;
+}
+.elementor-widget-apr_site_logo {
+    h1 {
+        margin: 0;
+    }
+}
+.woocommerce-order-received{
+    .hide-logo.elementor-widget-apr_site_logo{
+        display: none; 
+    } 
+}
+.logo-builder {
+    display: inline-block;
+
+    img {
+        width: 87px;
+    }
+}
+@media (max-width:767px){
+    
+    .logo-builder img {
+        width: 71px;
+    }
+}

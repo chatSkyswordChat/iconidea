@@ -1,0 +1,340 @@
+/* APR Woo - Categories */
+.woo-list-category {
+    a {
+        font-size: 16px;
+        letter-spacing: 0.025em;
+        color: $text_color;
+    }
+
+    .list-cate-title {
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        display: block;
+        color: $highlight_color;
+    }
+    .cate-list{
+        overflow: hidden;
+        display: block;
+        img{
+            @include transitions(all 0.4s);
+            width: 100%;
+        }
+        &:hover img{
+            @include transform(scale(1.1));
+        }
+    }
+    
+    ul.children-cate {
+        padding: 0;
+        list-style: none;
+
+        li {
+            a {
+                padding: side-values(0 0 11px 0);
+                text-align: inherit;
+            }
+
+            @media (min-width: 1025px) {
+                padding: 6px 0;
+            }
+        }
+    }
+
+    .view_all {
+        a {
+            display: inline-block;
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: 2px;
+                #{$left}: 0;
+                background: $primary_color;
+            }
+
+            &:hover {
+                color: $primary_color;
+
+                &:before {
+                    background: $primary_color;
+                }
+            }
+        }
+    }
+
+    .label-new {
+        padding: 3px 7px;
+        font-size: 80%;
+        border-radius: 0;
+        line-height: 100%;
+    }
+    &.style2{
+        .list-cate-title{
+            display: inline-block;
+        }
+    }
+    &.style3{
+        &.has-slider{
+            padding-right: 118px;
+            margin:0 -15px;
+        }
+        .slick-arrow {
+            position: absolute;
+            right: 14px;
+            border:1px solid #ebeeee;
+            background: #fff;
+            color:$highlight_color;
+            height: 118px;
+            line-height: 122px;
+            font-size: 24px;
+            width: 118px;
+            border:1px solid #ebeeee;
+            &:hover,&:focus{
+                background:$primary_color;
+                border-color:$primary_color;
+                color:#fff;
+            }
+            &.slick-prev{
+                top:115px;
+            }
+            &.slick-next{
+                top:0;
+            }
+        }
+        .cat-list-item{
+            padding:0 15px;
+            img{
+                margin-bottom: 18px;
+                background:#e9e9e9;
+                border:1px solid #ebeeee;
+                width: 100%;
+            }
+        }
+        .list-cate-title{
+            font-size: 32px;
+            margin-#{$right}:18px;
+            letter-spacing: 0;
+            display: inline-block;
+            text-transform: capitalize;
+            margin-#{$right}: 13px;
+        }
+        .cats-total{
+            font-size: 18px;
+            color: #2c2c2c;
+            display: inline-block;
+        }
+    }
+    &.style4{
+        img{
+             filter: gray; /* IE5+ */
+            -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+            @include transitions(all .8s ease-in-out);
+        }
+        &:hover img{
+            filter: none;
+            -webkit-filter: grayscale(0);
+        }
+        .info-woo-category{
+            @include transform(translateY(-100%));
+            position: absolute;
+            padding-#{$left}: 20px;
+            padding-bottom: 26px;
+            .list-cate-title{
+                color: #fff;
+                text-transform: capitalize;
+                font-size: 24px;
+                letter-spacing: 0;
+                padding-bottom: 7px;
+                &:hover{
+                    color: $primary_color;
+                }
+            }
+            .cats-total{
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 0.01em;
+            }
+        }
+    }
+}
+.woo-list-category ul.children-cate li a {
+    white-space: pre-line;
+}
+@media (max-width: 1366px){
+    .woo-list-category.style3 {
+        &.has-slider{
+            padding-#{$right}:84px;
+            .slick-arrow {
+                height: 84px;
+                line-height: 84px;
+                width: 84px;
+                &.slick-prev{
+                    top:83px;
+                }
+            }
+        }
+        
+        .list-cate-title{
+            font-size: 24px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .woo-list-category.style3 .cat-list-item img{
+        margin-bottom: 21px;
+    }
+    .woo-list-category.style1 {
+        &.sub-menu-active {
+            .cate-list {
+                display: block;
+
+                ul li {
+                    width: 100%;
+                    text-align: $left;
+                }
+            }
+        }
+
+        .cate-list {
+            padding-#{$left}: 21px;
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .list-cate-title {
+            text-transform: none;
+            padding: side-values(0 0 13px) ;
+            margin-bottom: 0;
+            letter-spacing: 0;
+            position: relative;
+            display: block;
+            white-space: nowrap;
+            color: $text_color;
+            margin-left: 20px;
+            border-bottom: 0;
+            line-height: 28px;
+        }
+
+        ul.children-cate li a {
+            padding: 0 0 3px;
+            margin-bottom: 0;
+            letter-spacing: 0;
+            position: relative;
+            display: block;
+            margin-left: 20px;
+            border-bottom: 0;
+            white-space: pre-line;
+            color: $text_color;
+        }
+    }
+}
+@media (min-width: 1025px) {
+    .woo-list-category:not(.style3) .cate-list {
+        overflow: hidden;
+
+        img {
+            transition: all ease 0.6s;
+        }
+    }
+    .woo-list-category:not(.style3):hover img {
+        transform: scale(1.1);
+    }
+}
+@media(min-width: 1025px){
+    .woo-list-category.style4{
+        .info-woo-category{
+            padding-#{$left}: 30px;
+        }
+    }
+}
+@media(min-width: 768px){
+    .woo-list-category.style4{
+        .info-woo-category{
+            padding-#{$left}: 20px;
+            padding-bottom: 24px;
+            .list-cate-title{
+                font-size: 32px;
+                padding-bottom: 12px;
+            }
+            .cats-total{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media(min-width: 1200px){
+    .woo-list-category.style4{
+        .info-woo-category{
+            padding-#{$left}: 47px;
+            padding-bottom: 43px;
+            .list-cate-title{
+                font-size: 45px;
+                padding-bottom: 7px;
+            }
+            .cats-total{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 767px){
+    .woo-list-category.style3.has-slider {
+        padding-right: 0;
+        .slick-arrow{
+            &.slick-next {
+                top: auto;
+                bottom: 0;
+                margin-bottom: -86px;
+                height: 56px;
+                width: 56px;
+                line-height: 60px;
+                font-size: 20px;
+                z-index: 11;
+            }
+            &.slick-prev{
+                top: auto;
+                right: 65px !important;
+                bottom: 0;
+                margin-bottom: -86px;
+                height: 56px;
+                width: 56px;
+                line-height: 60px;
+                font-size: 20px;
+                z-index: 11;
+            }
+        }
+    }
+}
+@media(max-width: 480px){
+    .woo-list-category.style3:not(.has-slider){
+        .list-cate-title{
+            display: block;
+        }
+    }
+    
+}
+
+.category-product-slider {
+    .slick-arrow {
+        top: 50%;
+        @include transform(translateY(-50%));
+        position: absolute;
+        background-color: #fff;
+        border: 0;
+
+        &:hover {
+            background-color: $primary_color;
+        }
+    }
+
+    .btn-prev {
+        #{$left}: 0;
+    }
+
+    .btn-next {
+        #{$right}: 0;
+    }
+}

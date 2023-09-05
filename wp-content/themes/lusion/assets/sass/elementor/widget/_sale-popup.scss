@@ -1,0 +1,99 @@
+.sale-popup {
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+    left: 0;
+	.elementor-inner .elementor-section.elementor-section-boxed > .elementor-container {
+		max-width: 100%;
+	}
+}
+.elementor-sale-popup{
+    ul.product-grid.products.columns-2 li.product .woocommerce-loop-product__title{
+        padding-#{$right}: 0 !important;
+    }
+    ul.product-items {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        max-width: 380px;
+        .item.product-item {
+            overflow: hidden;
+            clear: $left;
+            padding: 15px;
+            position: absolute;
+            background: #fff;
+            width: 380px;
+            #{$left}: 0;
+            bottom: 20px;
+            -webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,.12);
+            -moz-box-shadow: 0 0 12px 0 rgba(0,0,0,.12);
+            box-shadow: 0 0 12px 0 rgba(0,0,0,.12);
+            @include transform(translateY(150%));
+            @include transition(0.3s ease-out);
+            &.actived {
+                @include transform(translateY(0));
+                @include transition(0.3s linear);
+            }
+        }
+        .image-popup {
+            width: 75px;
+            float: $left;
+            margin-#{$right}: 20px;
+            a{
+                font-size: 0;
+            }
+        }
+        .content-popup {
+            overflow: hidden;
+            text-align: #{$left};
+            a {
+                font-size: 20px;
+                color: $primary_color;
+                display: block;
+                margin-bottom: 24px;
+            }
+        }
+        .purchase-top{
+            margin-bottom: 5px;
+            span{
+                color: $primary_color;
+                font-size: 14px;
+            }
+        }
+        .time-purchase {
+            font-size: 13px;
+        }
+        .x-close {
+            font-size: 10px;
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+            &:hover{
+                color: $primary_color;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .elementor-sale-popup {
+        ul.product-items .item.product-item {
+            bottom: 60px;
+        }
+	}
+}
+@media (max-width: 480px){
+    .elementor-sale-popup {
+        ul.product-items {
+            .item.product-item {
+                width: 290px;
+            }
+            .time-purchase {
+                position: static;
+                padding-top: 5px;
+            }
+            .content-popup a {
+                line-height: 24px;
+            }
+        }
+    }
+}

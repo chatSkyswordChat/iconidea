@@ -1,0 +1,101 @@
+.customize-control-kirki .button.button-small {
+  height: 29px; }
+
+/*custom*/
+li.customize-control {
+  position: relative; }
+
+li.customize-control hr {
+  margin: 0 -20px 0; }
+
+.group_title {
+  background: #f7f7f7;
+  margin: 10px -20px;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede; }
+
+#customize-controls {
+  background-color: #ffffff; }
+
+.customize-control-repeater .repeater-fields .repeater-row {
+  background: none !important; }
+
+#customize-controls #customize-theme-controls .accordion-section > .accordion-section-title > span + span,
+#customize-controls .control-section .customize-section-title h3 > .dashicons {
+  display: none; }
+
+#customize-controls #customize-theme-controls .customize-info > .accordion-section-title {
+  border-bottom: none !important; }
+
+.control-section-themes .accordion-section-title,
+#customize-controls .customize-info {
+  margin: 0; }
+
+.big_title {
+    font-size: 18px;
+  font-weight: 200;
+  padding: 10px 20px 12px;
+  margin: 0 -20px;
+  background: #666;
+  color: #fff;
+  margin-top: 20px;
+}
+input[type=textfiefd]{
+  width: 100%;
+}
+.customize-control-kirki .desc {
+  color: #555555;
+  font-size: 13px; }
+
+.customize-control-kirki-radio-image input + label img {
+  box-shadow: none !important;
+  border: 0 !important;
+  padding: 2px;
+  background-color: #999999;
+  margin-right: 5px; }
+
+.customize-control-kirki-radio-image input:checked + label img {
+  background-color: #3498db; }
+
+.customize-control-kirki-number .ui-spinner.ui-widget-content .ui-spinner-button.ui-spinner-down:before, .customize-control-kirki-number .ui-spinner.ui-widget-content .ui-spinner-button.ui-spinner-up:before {
+  line-height: 1.2; }
+#customize-control-preloader-image.customize-control-kirki-radio-image label {
+	width: 50%;
+}
+.customize-control-kirki-radio-buttonset.customize-control .buttonset .switch-label {
+	margin: 1px;
+}
+.customize-control-kirki-radio-buttonset .buttonset {
+	margin: 0 -1px;
+}
+.customize-control-repeater button.repeater-add { display: none; }
+#customize-control-image-header-1 .actions, #customize-control-image-header-2 .actions, #customize-control-image-header-3 .actions{
+  display: none !important;
+}
+.link_edit_header_buider{
+    background: #00a0d2;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 30px;
+    float: right;
+}
+.link_edit_header_buider:hover, .link_edit_header_buider:focus{
+  color: #fff;
+}
+
+#customize-control-footer_01_group_title_1 .actions,
+#customize-control-footer_02_group_title_1 .actions,
+#customize-control-footer_03_group_title_1 .actions,
+#customize-control-footer_04_group_title_1 .actions,
+#customize-control-footer_05_group_title_1 .actions,
+#customize-control-footer_06_group_title_1 .actions,
+#customize-control-footer_07_group_title_1 .actions {
+  display: none;
+}
+
+.customize-control-kirki-background .background-color {
+  display: none;
+}

@@ -1,0 +1,576 @@
+.mc4wp-form-fields{
+  p{
+    margin-bottom: 0;
+  }
+  input[type=email],.type-email{
+    height: 45px;
+    padding: 11px 20px;
+    font-weight: 400;
+    color: #9a9a9a;
+    font-size: 16px;
+    border-color: #ebeeee;
+    margin-bottom: 0;
+    text-align: center;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #999;
+      opacity: 1; /* Firefox */
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #999;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #999;
+    }
+  }
+  input[type=submit]{
+    margin-top: 20px;
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background:#2c2c2c;
+    border: none;
+    color: #fff;
+    width: 100%;
+    z-index: 0;
+    cursor: pointer;
+    padding: side-values(11px 30px);
+    &:hover{
+      background-color: $primary_color;
+      color: #fff;
+    }
+  }
+}
+//=================Popup==================//
+.popup-newsletter{
+	position: fixed;
+	top:50%;
+	left:50%;
+	@include transform(translateX(-50%) translateY(-50%));
+	background:#fff;
+	width: 570px;
+	min-height: 504px;
+	z-index: 99;
+	.mc4wp-form-fields input[type=email],
+	.mc4wp-form-fields .type-email{
+		padding:11px 20px;
+	}
+}
+.widget_mc4wp_form_widget{
+	position: relative;
+}
+#list-builder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .6;
+    display: none;
+    z-index: 99;
+}
+.popup-newsletter-content{
+	.form-content{
+		padding:45px 30px 30px;
+		h4{
+			font-size: 20px;
+			color: #2c2c2c;
+			text-align: center;
+			line-height: 24px;
+    		letter-spacing: -0.1px;
+    		margin-bottom: 19px;
+		}
+		p{
+			color: $text_color;
+			font-size: 16px;
+			text-align: center;
+			line-height: 22px;
+		}
+		.mc4wp-response{
+			margin-bottom: 13px;
+			text-align:$left;
+			p{
+				color: #fff;
+				text-align: $left;
+			}
+		}
+		.note{
+			color: #9a9a9a;
+			font-size: 16px;
+			text-align: $left;
+			margin-top: 0;
+			display: inline-block;
+		}
+		form{
+			margin-bottom: 0;
+		}
+		.checkbox-form{
+			padding-top:23px;
+			border-top:1px solid #ebeeee;
+			margin-top: 30px;
+			label{
+				color: #2c2c2c;
+				font-size: 16px;
+			}
+		}
+	}
+}
+.close-popup{
+	height: 26px;
+	width: 26px;
+	color:#000;
+	background:#ebeeee;
+	position: absolute;
+	#{$right}: -14px;
+	top:-13px;
+	text-align: center;
+    line-height: 29px;
+    font-size: 11px;
+    i{
+    	margin-#{$left}:1px;
+    }
+    &:hover{
+    	text-decoration: none;
+    }
+}
+.popup-title-form{
+	background:#2c2c2c;
+	color: #fff;
+	font-size: 18px;
+	padding: 15px 29px 17px;
+}
+.woocommerce .popup-account {
+	form.checkout_coupon,
+	form.login,
+	form.register{
+		border:none !important;
+		padding:0 !important;
+		margin:0;
+	}
+	form.woocommerce-form-register p.form-row input.input-text,
+	form.woocommerce-form-login p.form-row input.input-text {
+	    border: 1px solid #ebeeee !important;
+	    font-weight: 400;
+	}
+	.woocommerce-form-login .woocommerce-form-login__submit{
+		margin-right: 0 !important;
+	}
+} 
+.popup-account {
+	position: absolute;
+	display: none;
+	background:#fff;
+	z-index: 5;
+	#{$left}: 50%;
+	top: 50%;
+	min-height: 577px;
+	width: 490px;
+	@include transform(translate($translateX, -50%));
+	font-family: $font_default;
+	.close-popup{
+		background:none;
+		position:absolute;
+		height: auto;
+		width: auto;
+		top: 12px;
+   		#{$right}: 19px;
+   		display: none;
+	}
+	.popup-title{
+		text-align: center;
+		background:none;
+		color: #2c2c2c;
+		font-size: 32px;
+		line-height: 36px;
+		padding-bottom: 43px;
+	}
+	ul.woocommerce-error {
+	    margin-bottom: 20px;
+	    padding-#{$right}:15px !important;
+	}
+	form{
+		.form-row{
+			margin:0 0 20px 0;
+			width: 100%;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			input[type=email],
+			input[type=password],
+			input[type=text]{
+			    margin: 0;
+			    height: 50px;
+			    border: 1px solid #ebeeee;
+			    color: #9a9a9a;
+			    padding: 12px 20px 10px;
+			    font-size: 16px;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			}
+		}
+		.button-register {
+		    overflow: hidden;
+		    margin-bottom: 0;
+		    width: 100%;
+		    margin-top: 18px;
+		    display: inline-block;
+		}
+		.lost_password{
+			width: 50%;
+		    margin-top: -3px;
+		    float: $right;
+		    display: block;
+		    margin-bottom: 0;
+		    overflow: hidden;
+			a{
+				display: inline-block;
+				float: $right;
+				font-size: 16px;
+				color: $text_color;
+				&:hover{
+					color: $primary_color;
+				}
+			}
+			@media (max-width: 1024px){
+				width: 100%;
+				a{
+					float: left;
+				}
+			}
+		}
+		.checkbox-form {
+		    margin-bottom: 0;
+		    width: 50%;		    
+		    margin-top: -2px;
+		    overflow: hidden;
+		    display: inline-block;
+		}
+		label.checkcontainer {
+		    font-size: 16px;
+		    color: $text_color;
+		    margin-bottom: 0;
+		    display: inline-block;
+		    float: $left;
+		}
+		&.woocommerce-form.woocommerce-form-register button.button,
+		&.woocommerce-form.woocommerce-form-login button.button{
+			border:1px solid $primary_color;
+			height: 50px;
+			min-width: 100%;
+			background:$primary_color;
+			color: #fff;
+			font-size: 16px;
+			width: 100%;
+			border-radius: 0;
+			padding: 11px 20px;
+			margin-top: 3px;
+    		line-height: normal;
+    		text-align: center;
+			&:hover,&:focus,&:active{
+				border-color:$primary_color;
+				background:none;
+				color:$primary_color;
+				&:before{
+					background: none !important;
+				}
+			}
+		}
+		&.woocommerce-form-register,
+		&.woocommerce-form-login{
+			.wc-social-login{
+				display: inline-block;
+    			width: 100%;
+    			.ywsl-label{
+    				float: $left;
+    				font-size: 16px;
+    				margin-bottom: 15px;
+    				margin-top: 13px;
+    				color: #707070;
+    				width: 100%;
+    				text-align: center;
+    			}
+    			.socials-list{
+    				width: 100%;
+    				margin:0 auto;
+    				display: inline-block;
+    				a{
+    					margin-right:0;
+    					font-size: 16px;
+    					float: $left;
+    					color:#fff !important;
+    					padding:14px 25px 13px;
+    					width: calc(50% - 5px);
+    					display: inline-block;
+    					position: relative;
+    					img{
+    						display: none;
+    					}
+    					span{
+    						margin-left: 7px;
+   							padding-left: 9px;
+    						position:relative;
+    						letter-spacing: 1px;
+    						font-weight: normal;
+    						&:before{
+    							content: "";
+    							height: 17px;
+    							width: 1px;
+    							background:rgba(255,255,255,0.2);
+    							display: inline-block;
+    							left: 0;
+							    top: 3px;
+							    position: absolute;
+    						}
+    					}
+    					&.ywsl-facebook{
+    						margin-right: 5px;
+    						background:#34589c !important;
+    						&:before{
+    							content: "\e929";
+    							font-family: 'lusion';
+    							font-size: 17px;
+							    vertical-align: middle;
+    							margin-top: -3px;
+    							display: inline-block;
+    						}
+    					}
+    					&.ywsl-twitter{
+    						background:#1da1f2 !important;
+    						&:before{
+    							content: "\e928";
+    							font-family: 'lusion';
+    						}
+    					}
+    					&.ywsl-google{
+    						margin-left: 5px;
+    						background:#df3317  !important;
+    						&:before{
+    							content: "\e960";
+    							font-family: 'lusion';
+    							font-size: 17px;
+    							 vertical-align: middle;
+    							margin-top: -3px;
+    							display: inline-block;
+    						}
+    					}
+    				}
+    			}
+			}
+		}
+	}
+	.popup-account-content{
+		position:relative;
+		overflow: hidden;
+		.status{
+			overflow: hidden;
+		}
+	}
+	.woocommerce-LostPassword{
+		float: $left;
+	}
+	.nav-tabs{
+		padding-top:20px;
+		padding-bottom:0;
+		justify-content: $left;
+		li{
+			padding:0;
+			margin:0;
+			width: 100%;
+			&:last-child{
+				a:after{
+					content: none;
+				}
+			}
+			a::after {
+				content: '';
+				height: 5px;
+				width: 5px;
+				display: block;
+				background: $primary_color;
+				position: absolute;
+				#{$right}: 0;
+				top: 50%;
+				@include transform(translateY(-50%));
+			}
+			a.nav-link{
+				border: 1px solid $highlight_color;
+			    float: $left;
+			    font-size: 16px;
+			    padding:12px 20px;
+			    color: $highlight_color;
+			    border-radius:0; 
+			    display: block;
+			    width: 100%;
+			    text-align: center;
+			    &:after{
+			    	content: none;
+			    }
+			    &:hover,&:focus{
+			    	color: #fff;
+			    	background:$highlight_color;
+			    }
+			    &.active{
+			    	display: none;
+			    	color: #fff;
+			    	background:$highlight_color;
+			    }
+			}
+		}
+	}
+	&.popup-login{
+		min-height: 577px;
+	}
+	&.popup-register{
+		min-height: 572px;
+	}
+	&.popup-login,
+	&.popup-register{
+		.woocommerce-LostPassword{
+			display: inline-block;
+		}
+		form .form-row.button-register{
+			width: 100%;
+		}
+		form.woocommerce-form.woocommerce-form-login button.button{
+			width: 100%;
+		}
+	}
+}
+.form-content .wiget{
+	margin-bottom: 0;
+}
+.fancybox-close-small{
+	&:before{
+		content: "\e918";
+		font-family: 'lusion';
+		height: 26px;
+		width: 26px;
+		color:#000;
+		background:#ebeeee;
+		position: absolute;
+		right: -14px;
+		top:-13px;
+		text-align: center;
+	    line-height: 26px;
+	    font-size: 12px;
+	}
+}
+
+@media(min-width: 1025px){
+	.mc4wp-form-fields{
+		input[type=email],.type-email{
+			text-align: $left;
+		}
+		input[type=submit]{
+			margin-top: 10px;
+		}
+	} 
+	.popup-account .popup-account-content{
+		padding:74px 60px 80px;
+	}
+}
+@media(max-width: 1024px){
+
+	#list-builder,
+	.popup-newsletter{
+		display: none !important;
+	}
+	.woocommerce form.woocommerce-form-login .wc-social-login .ywsl-label {
+	    margin-#{$right}: 9px !important;
+	}
+	.woocommerce .woocommerce-form-login .woocommerce-form-login__submit{
+		float: none;
+	}
+	#popup-account.popup-account form .form-row.button-register {
+	    width: 100% !important;
+	}
+	.woocommerce-LostPassword.lost_password {
+		margin-bottom:0 !important;
+	    display: inline-block;
+	}
+	#popup-account.popup-account form .lost_password a{
+		margin-bottom: 0 !important;
+	}
+	#popup-account.popup-account {
+		.popup-title{
+			background-color: #2c2c2c;
+		    color: #fff;
+		    font-size: 20px;
+		    line-height: 28px;
+		    padding:5px 20px 7px;
+		    margin-bottom: 20px;
+		    margin-top:-15px;
+		    margin-left:-20px;
+		    margin-right:-20px;
+		 }
+		 .close-popup{
+		 	display: none;
+		 }
+	}
+	.popup-account form {
+		.checkbox-form {
+		    display: block;
+		    margin-bottom: 0;
+		    width: 100%;
+		    margin-top: 0;
+		}
+		 .lost_password{
+			margin-bottom: 20px !important;
+		}
+		&.woocommerce-form-register .wc-social-login .socials-list a, 
+		&.woocommerce-form-login .wc-social-login .socials-list a{
+			padding:5px 25px;
+		}
+	}
+}
+/* Recommend Popup */
+.popup-sale-wapper {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+	opacity: 0;
+	visibility: hidden;
+	&.active{
+		opacity: 1;
+		visibility: visible;
+		.popup-sale{
+			@include transform(translateY(-50%) translateX(0));
+		}
+	}
+	.close-box{
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		top: 0;
+		z-index: -1;
+		background: rgba(0,0,0,0.3);
+	}
+	.product-style-2 .product-grid .product-content:hover .product-top .product-action .group-action{
+		display: flex;
+	}
+}
+.popup-sale {
+	margin: 0 auto;
+	background: #fff;
+	max-width: 950px;
+	position: relative;
+	top: 50%;
+	padding: 25px 15px;
+	@include transform(translateY(-50%) translateX(-100px));
+	@include transition(transform .3s,opacity .3s,-webkit-transform .3s);
+	@media (max-width: 991px){
+		max-width: calc(100% - 30px);
+		padding: 25px 0;
+	}
+}
+
+.woocommerce .popup-account form.woocommerce-form.login .woocommerce-form-login__rememberme input[type="checkbox"] {
+	margin: 5px 7px 0 0;
+}
+.woocommerce form.woocommerce-form.login span.password-input {
+	padding-#{$left}: 0;
+} 

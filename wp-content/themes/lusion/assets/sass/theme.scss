@@ -1,0 +1,55 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.0 Common & Reset style
+	1.1 Plugins
+		1.1.1 Bootstrap
+		1.1.2 Font Awesome Icon
+		1.1.3 Owl Carousel
+	1.2 Config Skin
+
+2.0 Base
+	2.1 Header
+	2.2 Footer
+	2.3 Mega Menu
+	2.4 Breadcrumds
+	2.5 Preloader
+	2.4 Header responsive
+
+3.0 Content
+	3.1 Widget
+	3.2 Blog
+	3.3 Portfolio
+	3.4 Content
+	3.5 Service
+	3.6 Cart
+	3.7 Error Pages
+	3.8 Fancybox
+	3.9 Style Home
+	3.10 Product
+	3.11 Single Product
+
+4.0 Responsive
+
+-------------------------------------------------------------------*/
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+$rtl: 0; 
+$dir: ltr !default;
+
+
+@import "theme/variables";
+@import "theme/directional";
+@import "theme/reset-style";
+@import "theme/style-guide";
+@import "theme/animation";
+@import "theme/base/header";
+@import "theme/base/megamenu";
+@import "theme/base/header-responsive"; 
+@import "theme/base/preloader";
+@import "theme/base/footer";
+@import "theme/base/widgets";
+@import "theme/content/popup";
+@import "theme/update";
+@import "theme/custom-style";

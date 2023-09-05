@@ -1,0 +1,24 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+$rtl: 1;
+$dir: rtl !default;
+
+@import "theme/variables";
+@import "theme/directional";
+@import "theme/reset-style";
+@import "theme/style-guide";
+@import "theme/animation";
+@import "theme/base/header";
+@import "theme/base/megamenu";
+@import "theme/base/header-responsive";
+@import "theme/base/preloader";
+@import "theme/base/footer";
+@import "theme/base/widgets";
+@import "theme/content/popup";
+@import "theme/content/content_rtl";
+@import "theme/update";
+@import "theme/custom-style";
+
+
+//@import "theme/content/popup";

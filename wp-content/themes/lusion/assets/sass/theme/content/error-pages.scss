@@ -1,0 +1,169 @@
+//Page 404
+@import "../variables";
+@import "../directional";
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+@mixin transitions($transitions) {
+    -webkit-transition: $transitions;
+    -moz-transition: $transitions;
+    -ms-transition: $transitions;
+    -o-transition: $transitions;
+    transition: $transitions;
+}
+.error404 {
+    #site-main {
+        width: 100%;
+        padding-top: 0;
+    }
+    &.admin-bar {
+        @media (max-width: 782px) {
+            margin-top: -46px;
+        }
+        @media (max-width: 600px) {
+            margin-top: 0;
+        }
+    }
+
+    .container-fluid {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
+.page-404 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    h1 {
+        line-height: 328px;
+    }
+
+    .page-content-404 {
+        top: 50%;
+        @include transform(translateY(-50%));
+        #{$left}: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+    }
+
+    .content-404 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .text-404 {
+        margin-bottom: 0 !important;
+    }
+
+    .page-title {
+        font-size: 60px;
+        line-height: normal;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 19px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 46px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: inline-block;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .go-home {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 36px;
+        color: $primary_color;
+        @include transition(all 0.5s ease-in-out);
+        background-color: #fff;
+        padding: 12px 52px;
+        letter-spacing: 0.1em;
+        display: inline-block;
+
+        &:hover {
+            background-color: $heading_color;
+            color: #fff;
+        }
+
+        &:before {
+            @include transitions(none !important);
+        }
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .page-404 p {
+        font-size: 29px;
+    }
+    .page-404 .text-404 {
+        font-size: 350px !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    .page-404 {
+        .page-title {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .page-404 .text-404 {
+        font-size: 245px !important;
+        line-height: 230px;
+    }
+    .page-404 .page-title {
+        font-size: 42px;
+    }
+    .page-404 p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-404 .text-404 {
+        font-size: 150px !important;
+        line-height: normal !important;
+    }
+    .page-404 .page-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .page-404 p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}

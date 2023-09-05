@@ -1,0 +1,95 @@
+// Transition
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transit {
+    @include transition(all .3s cubic-bezier(.645, .045, .355, 1));
+}
+
+@mixin transit2 {
+    @include transition(all .3s cubic-bezier(.645, .045, .355, 1));
+}
+
+%transit {
+    @include transit();
+}
+
+%transit2 {
+    @include transit2();
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-1vw);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(-0.5vw);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0.5vw);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(1vw);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-1vw);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(-0.5vw);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0.5vw);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(1vw);
+    }
+}
+@keyframes pulse-border{
+
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        opacity: 0;
+    }
+
+}
+
+@-webkit-keyframes pulse-border{
+
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        opacity: 0;
+    }
+}

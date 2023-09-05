@@ -1,0 +1,129 @@
+.apr-contact{
+    p{
+        margin-bottom: 12px;
+    }
+    label{
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 0;
+        > span:not(.wpcf7-form-control-wrap){
+            color: $primary_color;
+        }
+    }
+    input[type="submit"]{
+        display: block;
+        background-color: $heading_color;
+        color: #fff;
+        border:0;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        height: 54px;
+        margin-top: 30px;
+        &:hover{
+            background-color: $primary_color;
+        }
+    }
+    .wpcf7-form-control:not([type="submit"]){
+        font-size: 18px;
+        height: 43px;
+    }
+    .wpcf7-form-control.wpcf7-text {
+        border-radius: 0;
+        background: transparent;
+        padding: 0 15px;
+        margin: 5px 0 10px -1px;
+        height: 45px;
+    }
+
+    input{
+         border-radius: 0;
+         background: transparent;
+         padding: 0;
+         margin: 5px 0 10px -1px;
+         height: 45px;
+     }
+    .wpcf7-form-control.wpcf7-textarea {
+        height: 184px;
+        resize: none;
+        padding: side-values(10px 0 0 15px) ;
+        border-radius: 0;
+        margin: 5px 0 10px -1px;
+    }
+    input.wpcf7-form-control[type="submit"] {
+        padding: 15px 31px;
+    }
+}
+
+.apr-cf7-button-justify .apr-cf7 .wpcf7-form .form-submit:before,
+.apr-cf7-button-center .apr-cf7 .wpcf7-form .form-submit:before {
+    #{$right}: 33.4%;
+}
+.apr-cf7-button-left .apr-cf7 .wpcf7-form .form-submit:before {
+    #{$left}: 33%;
+}
+
+.apr-cf7-button-center{
+    input[type="submit"]{
+        margin: auto;
+    }
+}
+.apr-cf7-button-right{
+    input[type="submit"]{
+        margin-#{$left}: auto;
+    }
+}
+.apr-cf7-button-justify{
+    input[type="submit"]{
+        width: 100%;
+    }
+}
+div.wpcf7 .ajax-loader {
+    top: 50%;
+    #{$left}: 50%;
+    position: absolute;
+    @include transform(translate(-50%,-50%));
+}
+
+.contact-2 .apr-contact .wpcf7-form-control.wpcf7-textarea {
+    height: 144px;
+}
+
+.contact-2 .apr-contact input[type="submit"] {
+    margin-top: 37px;
+}
+.contact-3 .apr-contact .wpcf7-form-control.wpcf7-textarea {
+    height: 85px;
+}
+.contact-form-new .apr-contact .wpcf7-form-control.wpcf7-text {
+    height: 35px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-form-new .apr-contact .wpcf7-form-control:not([type=submit]) {
+    font-size: 16px;
+}
+
+.contact-form-new .apr-contact label {
+    display: flex;
+}
+
+.contact-form-new .apr-contact label span {
+    width: 100%;
+}
+
+.contact-form-new .apr-contact p {
+    margin-bottom: 18px;
+}
+
+.contact-form-new .apr-contact .wpcf7-form-control.wpcf7-textarea {
+    height: 124px;
+}
+.contact-form-new .apr-cf7-style input:not([type=submit]), .contact-form-new .apr-cf7-style textarea {
+    &:focus {
+        border-color: $primary_color !important;
+    }
+}
+.contact-4 .apr-contact .wpcf7-form-control.wpcf7-textarea {
+    height: 76px;
+}

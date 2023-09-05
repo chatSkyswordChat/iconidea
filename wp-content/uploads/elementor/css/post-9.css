@@ -1,0 +1,138 @@
+.elementor-9 .elementor-element.elementor-element-64d2f29f > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-9 .elementor-element.elementor-element-40161b65{color:var( --e-global-color-primary );font-family:"DB_Moment_X", Sans-serif;font-size:24px;font-weight:400;}@media(max-width:1024px){.elementor-9 .elementor-element.elementor-element-64d2f29f > .elementor-element-populated{padding:0px 0px 0px 0px;}}/* Start custom CSS for section, class: .elementor-element-7587c7a6 */.wide .container {
+    padding-inline: 65px !important;
+    max-width: 100% !important
+}
+
+@media (max-width: 1024px){
+.wide .container {
+    padding-inline: 15px !important;
+    }
+}
+
+.wc-proceed-to-checkout > .wc-forward{
+    color: #ffffff !important;
+}
+.wc-proceed-to-checkout > .wc-forward:hover{
+    border: 1px solid #2c2c2c !important;
+}
+.wc-proceed-to-checkout > .wc-forward:hover:before{
+    background: #2c2c2c !important;
+}
+
+.shipping-calculator-form p button[type=submit]{
+    background: #2c2c2c !important;
+    color: #ffffff !important;
+    border: 1px solid #2c2c2c !important;
+}
+.shipping-calculator-form p button[type=submit]:hover{
+    border: 1px solid #ed1c23 !important;
+}
+.woocommerce-shipping-calculator > .shipping-calculator-form{
+    margin-top: 32px !important
+}
+
+.title-heading-cart{
+    display: none;
+}
+.cart-shipping td{
+    font-size: 24px !important
+}
+.cart-subtotal td[data-title],
+.order-total td[data-title]{
+    vertical-align: middle !important;
+}
+
+.woocommerce-cart-form .actions button.button, .woocommerce-cart-form .actions button.button:disabled, .woocommerce-cart-form .actions button.button:disabled[disabled]{
+    width: auto !important;
+    border: 1px solid #2c2c2c !important;
+    background: #2c2c2c !important;
+    color: #ffffff !important;
+}
+.woocommerce table.shop_table th{
+    font-size: 24px !important;
+}
+.shop_table.cart .product-cart-content .product-name,
+.shop_table .product-subtotal span{
+     font-size: 24px !important;
+}
+
+@media (max-width: 991px){
+.wishlist_table tr td::before, .woocommerce table.shop_table_responsive tr td::before, .woocommerce-page table.shop_table_responsive tr td::before {
+    font-size: 24px !important;
+    }
+}
+
+@media (max-width: 768px){.woocommerce-cart-form .actions button.button, .woocommerce-cart-form .actions button.button:disabled, .woocommerce-cart-form .actions button.button:disabled[disabled]{
+    width: 100% !important;
+    margin-bottom: 16px;
+    }
+    .shop_table.cart .product-cart-content{
+        padding-inline: 16px
+    }
+}
+
+.page.woocommerce-cart .box-shipping-cs .title-hdwoo .title-cart{
+    font-size: 24px !important;
+}
+.page.woocommerce-cart .box-shipping-cs .form-shipping-cs,
+.page.woocommerce-cart .box-shipping-cs label,
+.box-shipping .woocommerce-shipping-destination{
+        font-size: 24px !important;
+}
+.page.woocommerce-cart .box-shipping-cs .select2-container--default .select2-selection--single,
+#calc_shipping_state_field .select2-container--default .select2-selection--single .select2-selection__rendered{
+        font-size: 24px !important;
+}
+.select2-results__option[aria-selected], .select2-results__option[data-selected]{
+      font-size: 24px
+}
+
+.page.woocommerce-cart .box-shipping-cs input[type=text], .page.woocommerce-cart .box-shipping-cs select{
+    font-size: 24px !important;
+}
+
+.select2-results__option[aria-selected], .select2-results__option[data-selected]{
+    font-size: 24px !important
+}
+
+.page.woocommerce-cart .box-shipping-cs .shipping-calculator-form button.button{
+    font-size: 24px !important
+}
+
+.page.woocommerce-cart .cart-right .cart-collaterals .title-hdwoo .title-cart{
+      font-size: 24px !important
+}
+
+.woocommerce .wc-proceed-to-checkout a.button.alt{
+    font-size: 24px !important
+}
+
+.box-cart-total table.shop_table tbody td{
+    font-family: DB-Moment-X !important
+}
+
+bdi,
+.woocommerce-Price-amount {
+    font-size: 24px !important
+}
+.woocommerce .star-rating{
+    height: 1em !important;
+}
+
+.return-to-shop a{
+    font-size: 24px !important
+}
+
+@media (max-width: 576px){
+    .shipping-calculator-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .shipping-calculator-form > *{
+        max-width: 100% !important;
+        flex: 0 0 100% !important
+    }
+    .layout2 #calc_shipping_state_field .select2-container--default{
+        margin-bottom: 19px !important;
+    }
+}/* End custom CSS */

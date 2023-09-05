@@ -1,0 +1,52 @@
+$rtl: 1;
+$dir: rtl !default;
+
+@import "products";
+
+body.woocommerce .woocommerce-ordering select, div.woocommerce .woocommerce-ordering select{
+    background: url(../images/caret-down-shop.png) no-repeat 3px 10px;
+    background-size: 7px;
+}
+.left-sidebar+.main-sidebar .toobar-top {
+    justify-content: flex-start;
+}
+
+@media (min-width: 1200px){
+
+}
+.container-fluid .product-has-filter:not(.product-has-filter-top) .active-sidebar.left-sidebar.not-active {
+    @include transform(translateX(347px));
+}
+.woocommerce-pagination .page-numbers li:first-child .current:before,
+body.woocommerce nav.woocommerce-pagination .page-numbers li a.next:before,
+div.woocommerce nav.woocommerce-pagination .page-numbers li a.next:before{
+    transform: rotateY( -180deg );
+    display: block;
+}
+@media (min-width: 768px){
+    .product-style-default .product-grid .product-top .product-action .action-item .add-cart-btn a:before{
+        transform: translate(50%,-50%) rotateY( -180deg );
+        display: block;
+    }
+}
+.active-sidebar{
+    .bapf_slidr_jqrui .bapf_from, .ui-slider {
+        text-align: right;
+    }
+}
+.product-style-2 {
+    .product-content {
+        .product-top {
+            .add-cart-btn {
+                @include transform(translateX(-60px));
+            }
+            .product-action .group-action .action-item {
+                @include transform(translateX(-60px));
+            }
+        }
+    }
+}
+.active-sidebar .bapf_head h3 span{
+    left: 0;
+}
+

@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'lusion';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:  url('../webfonts/lusion.eot?40uiqo');
+  src: url('../webfonts/lusion.woff?40uiqo') format('woff'), 
+    url('../webfonts/lusion.ttf?40uiqo') format('truetype'),
+    url('../webfonts/lusion.svg?40uiqo#l40uiqousion') format('svg'),
+  url('../webfonts/lusion.eot?40uiqo#iefix') format('embedded-opentype');
+    
+
+}
+
+[class^="theme-icon-"], [class*=" theme-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lusion' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.theme-icon-download:before {
+  content: "\e900";
+}
+.theme-icon-back:before {
+  content: "\e901";
+}
+.theme-icon-magnifying-glass:before {
+  content: "\e902";
+}
+.theme-icon-upload:before {
+  content: "\e903";
+}
+.theme-icon-next:before {
+  content: "\e904";
+}
+.theme-icon-star:before {
+  content: "\e905";
+}
+.theme-icon-star-1:before {
+  content: "\e906";
+}
+.theme-icon-right-quotes-symbol:before {
+  content: "\e907";
+}
+.theme-icon-left-quotes-sign:before {
+  content: "\e908";
+}
+.theme-icon-plus:before {
+  content: "\e909";
+}
+.theme-icon-play:before {
+  content: "\e90a";
+}
+.theme-icon-pinterest:before {
+  content: "\e90b";
+}
+.theme-icon-paypal:before {
+  content: "\e90c";
+}
+.theme-icon-mastercard:before {
+  content: "\e90d";
+}
+.theme-icon-visa-pay-logo:before {
+  content: "\e90e";
+}
+.theme-icon-american-express-logo:before {
+  content: "\e90f";
+}
+.theme-icon-minus:before {
+  content: "\e910";
+}
+.theme-icon-maps-and-flags:before {
+  content: "\e911";
+}
+.theme-icon-heart:before {
+  content: "\e912";
+}
+.theme-icon-heart1:before {
+  content: "\e913";
+}
+.theme-icon-google-hangouts:before {
+  content: "\e914";
+}
+.theme-icon-slider:before {
+  content: "\e915";
+}
+.theme-icon-call:before {
+  content: "\e916";
+}
+.theme-icon-envelope:before {
+  content: "\e917";
+}
+.theme-icon-close:before {
+  content: "\e918";
+}
+.theme-icon-nine-oclock-on-circular-clock:before {
+  content: "\e919";
+}
+.theme-icon-tick:before {
+  content: "\e91a";
+}
+.theme-icon-cart:before {
+  content: "\e91b";
+}
+.theme-icon-menu:before {
+  content: "\e91c";
+}
+.theme-icon-right-arrow:before {
+  content: "\e91d";
+}
+.theme-icon-shopping-cart:before {
+  content: "\e91e";
+}
+.theme-icon-logout:before {
+  content: "\e91f";
+}
+.theme-icon-layout:before {
+  content: "\e920";
+}
+.theme-icon-user:before {
+  content: "\e921";
+}
+.theme-icon-pin:before {
+  content: "\e922";
+}
+.theme-icon-eye:before {
+  content: "\e923";
+}
+.theme-icon-shopping-bag:before {
+  content: "\e924";
+}
+.theme-icon-random:before {
+  content: "\e925";
+}
+.theme-icon-settings:before {
+  content: "\e926";
+}
+.theme-icon-home:before {
+  content: "\e927";
+}
+.theme-icon-twitter:before {
+  content: "\e928";
+}
+.theme-icon-facebook:before {
+  content: "\e929";
+}
+.theme-icon-left-arrow:before {
+  content: "\e92a";
+}
+.theme-icon-information:before {
+  content: "\e92b";
+}
+.theme-icon-information2:before {
+  content: "\e92c";
+}
+.theme-icon-instagram:before {
+  content: "\e92d";
+}
+.theme-icon-refresh:before {
+  content: "\e92e";
+}
+.theme-icon-candlestick-holder:before {
+  content: "\e92f";
+}
+.theme-icon-museum:before {
+  content: "\e930";
+}
+.theme-icon-vase:before {
+  content: "\e931";
+}
+.theme-icon-picture-frame:before {
+  content: "\e932";
+}
+.theme-icon-candlestick:before {
+  content: "\e933";
+}
+.theme-icon-balloon:before {
+  content: "\e934";
+}
+.theme-icon-lamp:before {
+  content: "\e935";
+}
+.theme-icon-scooter:before {
+  content: "\e936";
+}
+.theme-icon-gift:before {
+  content: "\e937";
+}
+.theme-icon-destination:before {
+  content: "\e938";
+}
+.theme-icon-piece-of-cake:before {
+  content: "\e939";
+}
+.theme-icon-cake:before {
+  content: "\e93a";
+}
+.theme-icon-share:before {
+  content: "\e93b";
+}
+.theme-icon-down-arrow:before {
+  content: "\e93c";
+}
+.theme-icon-move-selector:before {
+  content: "\e93d";
+}
+.theme-icon-list1:before {
+  content: "\e93e";
+}
+.theme-icon-tag:before {
+  content: "\e93f";
+}
+.theme-icon-calendar:before {
+  content: "\e940";
+}
+.theme-icon-user1:before {
+  content: "\e941";
+}
+.theme-icon-comment:before {
+  content: "\e942";
+}
+.theme-icon-shopping-bag1:before {
+  content: "\e943";
+}
+.theme-icon-Artboard-1:before {
+  content: "\e944";
+}
+.theme-icon-Artboard-2:before {
+  content: "\e945";
+}
+.theme-icon-tag-icon:before {
+  content: "\e946";
+}
+.theme-icon-text:before {
+  content: "\e947";
+}
+.theme-icon-download1:before {
+  content: "\e948";
+}
+.theme-icon-logout1:before {
+  content: "\e949";
+}
+.theme-icon-return-box:before {
+  content: "\e94a";
+}
+.theme-icon-support:before {
+  content: "\e94b";
+}
+.theme-icon-free-delivery:before {
+  content: "\e94c";
+}
+.theme-icon-shopping-cart1:before {
+  content: "\e94d";
+}
+.theme-icon-search-1:before {
+  content: "\e94e";
+}
+.theme-icon-shuffle:before {
+  content: "\e94f";
+}
+.theme-icon-diagram:before {
+  content: "\e950";
+}
+.theme-icon-user2:before {
+  content: "\e951";
+}
+.theme-icon-search:before {
+  content: "\e952";
+}
+.theme-icon-like:before {
+  content: "\e953";
+}
+.theme-icon-user3:before {
+  content: "\e954";
+}
+.theme-icon-policy:before {
+  content: "\e955";
+}
+.theme-icon-paint-palette:before {
+  content: "\e956";
+}
+.theme-icon-sewing-machine:before {
+  content: "\e957";
+}
+.theme-icon-delivery-bike:before {
+  content: "\e958";
+}
+.theme-icon-problem-solving:before {
+  content: "\e959";
+}
+.theme-icon-confetti:before {
+  content: "\e95a";
+}
+.theme-icon-goal:before {
+  content: "\e95b";
+}
+.theme-icon-pinky-promise:before {
+  content: "\e95c";
+}
+.theme-icon-vision:before {
+  content: "\e95d";
+}
+.theme-icon-rss:before {
+  content: "\e95e";
+}
+.theme-icon-ray:before {
+  content: "\e95f";
+}
+.theme-icon-gmail:before {
+  content: "\e960";
+}
+.theme-icon-phone-call-1:before {
+  content: "\e961";
+}
+.theme-icon-placeholder:before {
+  content: "\e962";
+}
+.theme-icon-phone-call:before {
+  content: "\e963";
+}
+.theme-icon-grid:before {
+  content: "\e964";
+}
+.theme-icon-list:before {
+  content: "\e965";
+}
+.theme-icon-quote:before {
+  content: "\e966";
+}
+.theme-icon-instagram1:before {
+  content: "\e967";
+}

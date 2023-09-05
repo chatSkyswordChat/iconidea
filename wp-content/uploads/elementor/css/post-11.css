@@ -1,0 +1,119 @@
+.elementor-11 .elementor-element.elementor-element-107b9298{margin-top:64px;margin-bottom:0px;}.elementor-11 .elementor-element.elementor-element-5e9b09ce > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-11 .elementor-element.elementor-element-1898eb0f{color:var( --e-global-color-primary );font-family:"db_moment", Sans-serif;font-size:24px;font-weight:400;}@media(max-width:1024px){.elementor-11 .elementor-element.elementor-element-107b9298{margin-top:32px;margin-bottom:0px;}}/* Start custom CSS for column, class: .elementor-element-5e9b09ce */label{
+    color: #2c2c2c !important;
+}
+
+/* Login */
+.checkmark{
+    display: none
+}
+.rm{
+    padding-left: 8px !important;
+}
+
+.woocommerce form.woocommerce-form.login .woocommerce-form__label input[type=checkbox]{
+    position: relative
+}
+.woocommerce .login a.woocommerce-LostPassword.lost_password{
+    font-size: 24px !important
+}
+.woocommerce-privacy-policy-text p{
+    font-size: 20px !important
+}
+/* End Login */
+
+/* Register */
+.woocommerce form p.form-row{
+    margin-bottom: 8px !important
+}
+/* End Register */
+
+/* หัวข้อ */
+.page-title{
+    margin-top: 128px !important
+}
+
+@media (max-width: 1199px){
+    .page-title{
+    margin-top: 64px !important
+    }
+}
+/* End หัวข้อ */
+
+/* ข้อมูลบัญชี */
+.iconidea-account .woocommerce-MyAccount-navigation a{
+    font-size: 24px !important;
+}
+.iconidea-account .welcome-admin{
+    font-size: 28px !important;
+}
+.iconidea-account .welcome-admin strong{
+    font-weight: 600 !important
+}
+.iconidea-account .woocommerce-MyAccount-content p{
+    font-size: 24px !important
+}
+/* End Account Dashboard */
+
+/* Account Information */
+.woocommerce form .form-row label,
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
+    font-size: 24px !important
+}
+.woocommerce-account .woocommerce-MyAccount-content form.edit-account em{
+    font-size: 20px !important;
+}
+.checkbox-custom.change-password{
+    font-size: 24px !important
+}
+.woocommerce-account .woocommerce-MyAccount-content form.edit-account .button{
+    font-size: 24px
+}
+/* End ข้อมูลบัญชี */
+
+/* บัญชีของฉัน */
+.iconidea-account .woocommerce-Address-title h3{
+    font-size: 24px !important
+}
+.iconidea-account .edit{
+    font-size: 20px !important
+}
+.button[type="submit"]{
+    font-size: 24px !important
+}
+.woocommerce-MyAccount-content address{
+    font-size: 24px !important
+}
+/* End บัญชีของฉัน */
+
+/* My Order */
+thead tr th{
+    font-size: 24px !important
+}
+tbody tr td a,
+tbody tr td{
+    color: #2c2c2c !important;
+    font-size: 24px !important;
+}
+.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-number a{
+    color: #007bff !important;
+}
+.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions a{
+    color: #007bff !important;
+    }
+
+.woocommerce table.shop_table_responsive tr td::before, .woocommerce-page table.shop_table_responsive tr td::before{
+    font-size: 24px !important
+}
+
+@media (max-width: 991px){
+ .shop_table.my_account_orders .woocommerce-orders-table__row.order {
+   margin-bottom: 16px;
+    }
+}
+/* End My Order */
+
+/* Download */
+.woocommerce-downloads.woocommerce-account .woocommerce-MyAccount-content .woocommerce-info a.button{
+    font-size: 24px
+}
+/* End Download *//* End custom CSS */

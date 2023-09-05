@@ -1,0 +1,19 @@
+/*----------------------------*/
+/* Testimonial SC
+/*----------------------------*/
+@import 'apr-core-rtl';
+@import 'widget/testimonial';
+
+
+.testimolial-about .testimonial .testimonial-content .elementor-testimonial-desc:before {
+    left: -17px;
+}
+.testimonial-image .img-wrap:before,
+.extra_title:before,
+.apr-product.product-list.list-2 .product-content .product-top .product-action {
+    transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}

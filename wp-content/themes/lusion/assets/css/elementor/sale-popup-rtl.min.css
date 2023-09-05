@@ -1,0 +1,78 @@
+/*----------------------------*/
+/* Icon Box SC
+/*----------------------------*/
+.sale-popup {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  left: 0; }
+  .sale-popup .elementor-inner .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 100%; }
+
+.elementor-sale-popup ul.product-grid.products.columns-2 li.product .woocommerce-loop-product__title {
+  padding-left: 0 !important; }
+.elementor-sale-popup ul.product-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  max-width: 380px; }
+  .elementor-sale-popup ul.product-items .item.product-item {
+    overflow: hidden;
+    clear: right;
+    padding: 15px;
+    position: absolute;
+    background: #fff;
+    width: 380px;
+    right: 0;
+    bottom: 20px;
+    -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out; }
+    .elementor-sale-popup ul.product-items .item.product-item.actived {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: 0.3s linear;
+      transition: 0.3s linear; }
+  .elementor-sale-popup ul.product-items .image-popup {
+    width: 75px;
+    float: right;
+    margin-left: 20px; }
+    .elementor-sale-popup ul.product-items .image-popup a {
+      font-size: 0; }
+  .elementor-sale-popup ul.product-items .content-popup {
+    overflow: hidden;
+    text-align: right; }
+    .elementor-sale-popup ul.product-items .content-popup a {
+      font-size: 20px;
+      color: #2c2c2c;
+      display: block;
+      margin-bottom: 24px; }
+  .elementor-sale-popup ul.product-items .purchase-top {
+    margin-bottom: 5px; }
+    .elementor-sale-popup ul.product-items .purchase-top span {
+      color: #2c2c2c;
+      font-size: 14px; }
+  .elementor-sale-popup ul.product-items .time-purchase {
+    font-size: 13px; }
+  .elementor-sale-popup ul.product-items .x-close {
+    font-size: 10px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer; }
+    .elementor-sale-popup ul.product-items .x-close:hover {
+      color: #2c2c2c; }
+
+@media (max-width: 1024px) {
+  .elementor-sale-popup ul.product-items .item.product-item {
+    bottom: 60px; } }
+@media (max-width: 480px) {
+  .elementor-sale-popup ul.product-items .item.product-item {
+    width: 290px; }
+  .elementor-sale-popup ul.product-items .time-purchase {
+    position: static;
+    padding-top: 5px; }
+  .elementor-sale-popup ul.product-items .content-popup a {
+    line-height: 24px; } }

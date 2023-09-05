@@ -1,0 +1,37 @@
+.elementor-widget-accordion {
+  .elementor-accordion {
+    .elementor-tab-title {
+      &:not(.elementor-active) {
+        background: #f9f9fd;
+      }
+
+      a {
+        letter-spacing: 0.05em;
+      }
+    }
+
+    .elementor-tab-content {
+      p {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.025em;
+      }
+      ul li:after{
+        content: none;
+      }
+      ul > li span {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+      }
+
+      &:before {
+        height: 80px;
+        background: url('../images/img-service-shadow.png') no-repeat;
+        top: -30px;
+        #{$left}: 0;
+        @include transform(translate(-30px, 0));
+      }
+    }
+  }
+}

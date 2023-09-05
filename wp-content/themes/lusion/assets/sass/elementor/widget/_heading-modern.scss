@@ -1,0 +1,96 @@
+.heading-modern {
+    .heading-title{
+        color: #474747;
+        letter-spacing: 0.015em;
+        line-height: 50px;
+        position: relative;
+        span{
+            display: block;
+        }
+        a{
+            color: #000;
+            @include transitions(all 0.3s);
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            #{$left}: 0;
+            background-color: #fff;
+        }
+    }
+    &.bottom,
+    &.top{
+        &.text-right{
+            .heading-title:before{
+                #{$right}: 0;
+                #{$left}: auto;
+            }
+        }
+        &.text-center{
+            .heading-title:before{
+                #{$left}: 50%;
+                @include transform(translateX($translateX));
+            }
+        }
+    }
+    &.top-right{
+        &.text-right{
+            .heading-title:before{
+                #{$right}: 0;
+                #{$left}: auto;
+            }
+        }
+    }
+    &.bottom{
+        .heading-title:before{
+            bottom: 0;
+        }
+    }
+    &.top{
+        .heading-title:before{
+            top: 0;
+        }
+    }
+    .description{
+        font-size: 20px;
+        color: #777;
+        line-height: 32px;
+    }
+    .description-position-aside{
+        display: flex;
+        .heading-title{
+            width: 100%;
+            max-width: 370px;
+        }
+        .description{
+            padding-#{$left}: 30px;
+            font-size: 18px;
+        }
+    }
+    &.text-center{
+        text-align: center;
+        .description,
+        .heading-title{
+            margin-#{$left}: auto;
+            margin-#{$right}: auto;
+        }
+    }
+    &.text-right{
+        text-align: right;
+        .description,
+        .heading-title{
+            margin-#{$left}: auto;
+        }
+    }
+    &.text-left{
+        text-align: left;
+    }
+}
+.heading-custom .heading-modern .heading-title span {
+    display: inline-block;
+    color: $primary_color;
+    text-decoration: underline;
+}

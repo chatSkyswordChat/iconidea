@@ -1,0 +1,133 @@
+
+.counter-box {
+    text-align: center;
+
+    .elementor-counter-number-suffix {
+        margin-#{$left}: -20px;
+    }
+
+    .elementor-counter .elementor-counter-title {
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary_color;
+    }
+
+    .elementor-counter .elementor-counter-number-wrapper {
+        font-weight: 500;
+        font-size: 90px;
+        color: #fff;
+        position: relative;
+        display: inline-block;
+        min-height: 180px;
+        line-height: 141px;
+
+        &:before {
+            content: '';
+            height: 159px;
+            width: 159px;
+            background-color: #fff;
+            border: 1px solid #645dbc;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -2;
+            left: -46px;
+            top: 13px;
+        }
+
+        &:after {
+            content: '';
+            width: 182px;
+            height: 119px;
+            display: inline-block;
+            background: rgba(99, 93, 188, 1);
+            background: -moz-linear-gradient(left, rgba(99, 93, 188, 1) 0%, rgba(251, 151, 179, 1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(99, 93, 188, 1)), color-stop(100%, rgba(251, 151, 179, 1)));
+            background: -webkit-linear-gradient(left, rgba(99, 93, 188, 1) 0%, rgba(251, 151, 179, 1) 100%);
+            background: -o-linear-gradient(left, rgba(99, 93, 188, 1) 0%, rgba(251, 151, 179, 1) 100%);
+            background: -ms-linear-gradient(left, rgba(99, 93, 188, 1) 0%, rgba(251, 151, 179, 1) 100%);
+            background: linear-gradient(to right, rgba(99, 93, 188, 1) 0%, rgba(251, 151, 179, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#635dbc', endColorstr='#fb97b3', GradientType=1);
+            z-index: -1;
+            position: absolute;
+            border-radius: 60px;
+            transform: rotateZ(-37deg);
+            #{$left}: -26px;
+            top: 11px;
+        }
+    }
+}
+.counter-type1{
+	text-align: center;
+	.box-counter{
+    	@include transition(all 0.3s) ;
+    	.icon-counter{
+    		font-size: 60px;
+			line-height: 60px;
+    		color: #fff;
+			background-color: #dd3032;
+			margin-top: -33px;
+			padding: 0 22px;
+		    justify-content: center;
+		    align-items: center;
+			position: absolute;
+			left: 50%;
+			@include transform(translateX(-50%));
+    	}
+		position: relative;
+	}
+	&.elementor-counter{
+		.elementor-counter-title{
+			font-size: 20px;
+			color: #fff;
+			letter-spacing: 0;
+			line-height: 30px;
+			display: block;
+			text-transform: uppercase;
+			margin-bottom: 36px;
+    	}
+    	.elementor-counter-number-wrapper{
+    		font-size: 50px;
+    		color: #fff;
+    		letter-spacing: 0;
+			display: block;
+			margin-top: 55px;
+    	}
+	}
+	.content-counter{
+		border: 7px solid #fff;
+	}
+	&.horizontal_enable {
+		.content-counter{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-width: 0;
+
+			.elementor-counter-title{
+				font-size: 16px;
+				line-height: 20px;
+				color: #707070;
+				text-align: #{$left};
+			}
+			.elementor-counter-number-wrapper{
+				font-size: 46px;
+				line-height: 33px;
+				color: $primary_color;
+			}
+		}
+		.box-counter{
+			padding: 44px 0 43px;
+			background-color: #fff;
+		}
+	}
+	&.horizontal_enable.elementor-counter .elementor-counter-number-wrapper {
+		margin-top: 0;
+		border-#{$right}: 1px solid #ebeeee;
+		padding-#{$right}: 15px;
+		margin-#{$right}: 15px;
+	}
+	&.horizontal_enable.elementor-counter .elementor-counter-title {
+		margin-bottom: 0;
+	}
+}

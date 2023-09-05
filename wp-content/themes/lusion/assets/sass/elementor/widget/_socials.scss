@@ -1,0 +1,64 @@
+.list-social {
+    .title {
+        display: inline-block;
+        color: #2c2c2c;
+        font-size: 16px;
+    }
+
+    .socials {
+        padding-#{$left}: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 0;
+            margin: 0 7px;
+
+            &:first-child {
+                margin-#{$left}: 0;
+            }
+
+            &:last-child {
+                margin-#{$right}: 0;
+            }
+
+            a {
+                color: #9A9A9A;
+                display: inline-block;
+                font-size: 16px;
+                text-align: center;
+
+                &:hover {
+                    color: $primary_color;
+                }
+            }
+        }
+    }
+
+    &.social-inline {
+        .socials,
+        .title {
+            display: inline-block;
+        }
+
+        .title {
+            margin-#{$right}: 11px;
+            margin-bottom: 0;
+            vertical-align: top;
+            margin-top: 3px;
+        }
+
+        .socials {
+            li {
+                a {
+                    padding-top: 2px;
+                }
+            }
+        }
+    }
+}
+.header-5 {
+    .socials .theme-icon-instagram {
+        font-size: 14px;
+    }
+}

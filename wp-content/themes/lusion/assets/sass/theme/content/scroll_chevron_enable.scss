@@ -1,0 +1,52 @@
+.fullpage .fp-viewing-6 {
+    #arrowAnim {
+        display: none;
+    }
+}
+#arrowAnim {
+    position: absolute;
+    top: 50%;
+    right: 52px !important;
+    margin-top: -10px;
+    display: none;
+}
+
+.arrowSliding {
+    position: absolute;
+    font-size: 16px;
+    line-height: 16px;
+    color: $highlight_color;
+    -webkit-animation: slide 4s linear infinite;
+    animation: slide 4s linear infinite;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.delay2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.delay3 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+}
+@media(min-width: 1025px) and (max-width: 1366px) {
+    #arrowAnim {
+        right: 33px !important;
+    }
+}
+@media (min-width: 1025px) {
+    .fullpage #arrowAnim {
+        display: block;
+    }
+}
+    

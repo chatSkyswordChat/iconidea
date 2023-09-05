@@ -1,0 +1,28 @@
+.elementor-7946 .elementor-element.elementor-element-e3e524b > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-7946 .elementor-element.elementor-element-1f8a554 > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-7946 .elementor-element.elementor-element-b761b16{text-align:center;}.elementor-7946 .elementor-element.elementor-element-b761b16 .elementor-heading-title{font-family:"DB-Moment-X", Sans-serif;font-size:60px;}.elementor-7946 .elementor-element.elementor-element-b761b16 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-7946 .elementor-element.elementor-element-3ff8aea > .elementor-widget-container{margin:64px 0px 0px 0px;}@media(max-width:1024px){.elementor-7946 .elementor-element.elementor-element-b761b16 .elementor-heading-title{font-size:40px;}.elementor-7946 .elementor-element.elementor-element-b761b16 > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-7946 .elementor-element.elementor-element-3ff8aea > .elementor-widget-container{margin:32px 0px 0px 0px;}}/* Start custom CSS for section, class: .elementor-element-0dfac0e */.form-row label,
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
+    font-size: 24px !important
+}
+.form-row label{
+    color: #2c2c2c !important
+}
+.form-row button[type=submit]{
+    font-weight: normal;
+    background: #ed1c23;
+    color: #ffffff;
+    margin-top: 16px;
+}
+.form-row button[type=submit]:hover:before{
+    background: #2c2c2c !important;
+}
+.form-row button[type=submit]:hover{
+    color: #ffffff;
+}
+
+@media (max-width: 768px){
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last{
+        width: 100% !important;
+    }
+    .form-row button[type=submit]{
+        width: 100%;
+    }
+}/* End custom CSS */
